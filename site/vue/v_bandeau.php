@@ -1,1 +1,0 @@
-<a href="./"><img src="css/bandeau.png" alt="logo de la Mediateq"></a>

@@ -4,7 +4,7 @@
 WEB_DIR="site"
 phpMyAdmin_DIR="../../usr/src/phpmyadmin"
 SQL_FILE_ENV="database/sources-sql/init-BDD.sql"
-SQL_FILE_BDD="database/sources-sql/mediateq.sql"
+SQL_FILE_BDD="database/sources-sql/oceane.sql"
 
 # Créer le répertoire /run/mysqld si nécessaire et définir les permissions
 if [ ! -d /run/mysqld ]; then

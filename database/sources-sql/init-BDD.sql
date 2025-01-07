@@ -1,14 +1,10 @@
-DROP DATABASE IF EXISTS mediateq;
-CREATE DATABASE IF NOT EXISTS mediateq DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-DROP USER IF EXISTS "mediateq-web"@"%";
-CREATE USER "mediateq-web"@"%" IDENTIFIED BY "medi@teq-w3b";
-GRANT SELECT ON mediateq.* TO "mediateq-web"@"%";
+DROP DATABASE IF EXISTS `oceane`;
+CREATE DATABASE IF NOT EXISTS `oceane`
+CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-DROP USER IF EXISTS "mediateq-admin"@"%";
-CREATE USER "mediateq-admin"@"%" IDENTIFIED BY "medi@teq-@dm1n";
-GRANT ALL ON mediateq.* TO "mediateq-admin"@"%" WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+CREATE USER 'oceane-web'@'%' IDENTIFIED BY 'oceane-intra';
 
-USE mediateq;
+GRANT ALL ON oceane.* TO 'oceane-web'@'%' ;
 
+USE `oceane`;

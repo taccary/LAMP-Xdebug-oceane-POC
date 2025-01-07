@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables de configuration
-DB_NAME="mediateq"
+DB_NAME="oceane"
 DB_USER="admin"
 DB_PASSWORD="admin_password"
 BACKUP_DIR="database/sources-sql"
