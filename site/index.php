@@ -1,13 +1,10 @@
 <?php
 	session_start(); // mécanisme utilisé pour la gestion des sessions pour les connexions
-?>
-<!doctype html>
-<html lang="fr">
-<?php
 	include('routes.php');
 ?>
 
-
+<!doctype html>
+<html lang="fr">
 <head>
  	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="skin/favicon.ico" />
@@ -36,7 +33,6 @@
 
 	<!-- https://icons.getbootstrap.com/#usage bibliotheque d'icones bootstrap 5 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
 
 </head>
 

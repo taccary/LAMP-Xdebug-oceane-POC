@@ -1,7 +1,6 @@
 <?php
 	include_once('BDD/connectBdd.php'); // cette page a besoin d'inclure le code qui crée l'objet PDO $connexion qui permet d'interroger la BDD
 
-
 	if(isset($_POST['add'])){
 		$nom = $_POST['nom'];
 		$SQL = "SELECT max(id) FROM bateau";
@@ -19,7 +18,6 @@
 		else{
 			$_SESSION["error"] = 'Problème lors de l\'ajout du bateau';
 		}
-		header('location: index.php?action=modifieBateau');
 	}
 	
 	if(isset($_POST['edit'])){
@@ -36,7 +34,6 @@
 		else{
 			$_SESSION['error'] = 'Problème lors de la modification du bateau';
 		}
-		header('location: index.php?action=modifieBateau');
 	}
 	
 	if(isset($_POST['supr'])){
@@ -50,6 +47,12 @@
 		else{
 			$_SESSION['error'] = 'Problème lors de la suppression du bateau';
 		}
-		header('location: index.php?action=modifieBateau');
 	}
-?>
+
+	// Redirection avec JavaScript
+	echo '<script type="text/javascript">
+		window.location.href = "index.php?action=modifieBateau";
+	</script>';
+	exit; // le script s'arrête ici
+
+	?>
