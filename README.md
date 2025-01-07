@@ -58,12 +58,18 @@ Ce dépôt est configuré pour fonctionner avec les Codespaces de GitHub et les 
 
    - avec phpMyAdmin sur le port 8080
 
-4. **Sauver et mettre à jour la BDD** :
-   - Si vous avez fait des modifs significatives dans la BDD métier, lancer le script bash saveBDD pour écraser le fichier sql actuel de la bdd par votre sauvegarde
+4. **initialiser la BDD** :
+   - Au premier démarrage, créez la bdd métier avec le fichier sql 
+      ```bash
+      ./database/scripts/initBDD.sh 
+      ```
+
+5. **Sauver et mettre à jour la BDD** :
+   - A chaque fois que vous avez fait des modifs significatives dans la BDD métier, lancer le script bash saveBDD pour écraser le fichier sql actuel de la bdd par votre sauvegarde (puis pensez à push sur le distant pour vos collaborateurs)
       ```bash
       ./database/scripts/saveBDD.sh 
       ```
-   - Si vous avez récupéré du dépot distant une version mise à jour du script de la BDD métier, lancer le script bash reloadBDD pour écraser la bdd actuelle de votre codespace par celle du script.
+   - Si des modifs ont été faites à la BDD et que vous avez récupéré du dépot distant (pull) une version mise à jour du script de la BDD métier, lancer le script bash reloadBDD pour écraser la bdd actuelle de votre codespace par celle du script récupéré.
       ```bash
       ./database/scripts/reloadBDD.sh 
       ```
