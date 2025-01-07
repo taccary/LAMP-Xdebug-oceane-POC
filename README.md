@@ -3,9 +3,9 @@
 blablablba projet
 
 TODO :
-Améliorer la structure
-travailler la persistance bdd
-Voir comment le codespace réagit quand on le relance (mélange des genres dand le run.sh déplacer la création bdd métier quand persistance)
+- améliorer la structure
+- travailler la persistance bdd (historique des scripts ? detection quand on a un nouveau script ?)
+- Voir comment le codespace réagit quand on le relance (mélange des genres dand le run.sh déplacer la création bdd métier quand persistance)
 
 ## Arborescence du dépôt
 
