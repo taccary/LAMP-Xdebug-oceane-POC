@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Exécution du script saveDBB.sh..."
 
 # Variables de configuration
 DB_NAME="oceane"

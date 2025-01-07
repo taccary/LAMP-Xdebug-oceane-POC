@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Exécution du script initDBB.sh..."
 
 SQL_FILE_ENV="database/sources-sql/init-BDD.sql"
 SQL_FILE_BDD="database/sources-sql/oceane.sql"

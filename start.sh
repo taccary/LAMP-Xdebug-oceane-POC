@@ -17,9 +17,9 @@ echo "Démarrage du service MariaDB..."
 sudo service mariadb start
 
 # Executer le script d'initialisation de la base de données database/scripts/initDBB.sh
-echo "Exécution du script initDBB.sh..."
-sudo chmod +x ./database/scripts/initDBB.sh
-sudo ./database/scripts/initDBB.sh
+# echo "Exécution du script initDBB.sh..."
+# sudo chmod +x ./database/scripts/initDBB.sh
+# sudo ./database/scripts/initDBB.sh
 
 # Fonction pour vérifier si un port est utilisé
 is_port_in_use() {
