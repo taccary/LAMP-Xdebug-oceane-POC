@@ -3,9 +3,9 @@
 blablablba projet
 
 TODO :
+- finir le readme ^^
 - améliorer la structure
 - travailler la persistance bdd (historique des scripts ? detection quand on a un nouveau script ?)
-- Voir comment le codespace réagit quand on le relance (mélange des genres dand le run.sh déplacer la création bdd métier quand persistance)
 
 ## Arborescence du dépôt
 
@@ -20,7 +20,8 @@ Voici l'arborescence du dépôt et le rôle des différents composants. Les fich
 |  ├── scripts # contient 3 scripts bash : 1 pour initialiser la BDD métier (avec ses utilisateurs système), 1 pour sauver la bdd métier du codespace et 1 pour la recharger à partir du .sql présent dans le dépot
 |  └── sources-sql # fichiers SQL pour contruire la BDD métier, ses utilisateurs et ses données 
 ├── site # Dossier racine du serveur web
-└── start.sh # Script de lancement pour démarrer le service mariadb et les instances web du site et de phpMyAdmin.
+├── start.sh # Script de lancement pour démarrer le service mariadb et les instances web du site et de phpMyAdmin.
+└── stop.sh # Script pour arreter le service mariadb et les instances web du site et de phpMyAdmin.
 
 
 ## Configuration du Codespace et lancement de l'application
