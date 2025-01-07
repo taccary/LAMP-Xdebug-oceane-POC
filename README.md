@@ -39,9 +39,9 @@ Ce dépôt est configuré pour fonctionner avec les Codespaces de GitHub et les 
 ### Serveur php et service mariadb (avec la base métier)
 
 1. **Pour lancer les services** :
-   - Dans le terminal, exécutez le script `run.sh` :
+   - Dans le terminal, exécutez le script `start.sh` :
      ```bash
-     ./run.sh
+     ./start.sh
      ```
    Ce script démarre le serveur PHP intégré sur le port 8000, démarre maraidb et crée la base métier depuis le script renseigné (mettre à jour en fonction du projet).
 
