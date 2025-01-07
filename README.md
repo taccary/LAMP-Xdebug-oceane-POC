@@ -17,10 +17,10 @@ Voici l'arborescence du dépôt et le rôle des différents composants. Les fich
 ├── .github/ # config pour les alertes de dépendances (sécurité)
 ├── .vscode/ # config pour XDebug et parametres de vscode
 ├── database # scripts pour la BDD
-|  ├── scripts # contient 2 scripts bash : 1 pour sauver la bdd métier du codespace et 1 pour la recharger à partir du .sql présent dans le dépot
+|  ├── scripts # contient 3 scripts bash : 1 pour initialiser la BDD métier (avec ses utilisateurs système), 1 pour sauver la bdd métier du codespace et 1 pour la recharger à partir du .sql présent dans le dépot
 |  └── sources-sql # fichiers SQL pour contruire la BDD métier, ses utilisateurs et ses données 
 ├── site # Dossier racine du serveur web
-└── run.sh # Script de lancement pour démarrer le service mariadb et initialiser la BDD métier (avec ses utilisateurs système) + démarrer les instances web du site et de phpMyAdmin.
+└── start.sh # Script de lancement pour démarrer le service mariadb et les instances web du site et de phpMyAdmin.
 
 
 ## Configuration du Codespace et lancement de l'application
